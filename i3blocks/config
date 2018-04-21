@@ -1,0 +1,37 @@
+separator=false
+separator_block_width=10
+
+[ip]
+command=$HOME/.config/i3blocks/blocks/ip
+label=
+interval=60
+
+[bandwidth]
+command=$HOME/.config/i3blocks/blocks/bandwidth
+instance=enp4s0
+interval=1
+
+[memory]
+command=$HOME/.config/i3blocks/blocks/memory
+label=
+interval=30
+
+[temperature]
+command=$HOME/.config/i3blocks/blocks/temp
+label=
+interval=10
+
+#if you prefer automatic updating
+[volume-pulseaudio]
+#label=
+command=$HOME/.config/i3blocks/blocks/volume-pulseaudio -Sa
+interval=persist
+
+[time]
+label=    
+command=echo "`date +'%a %d %b'` <b>`date +'%T'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+interval=1
+markup=pango
+separator_block_width=0
+
+
