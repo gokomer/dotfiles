@@ -173,6 +173,7 @@ bindsym Mod4+l exec "i3lock -i $HOME/Pictures/d3wall.png"
 exec xautolock -time 5 -locker 'i3lock -i $HOME/Pictures/d3wall.png'
 
 # Set wallpaper
+# Check if you can make variety work
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/d3wall.png
 
 # Set Screenshot
